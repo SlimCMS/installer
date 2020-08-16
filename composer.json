@@ -8,7 +8,7 @@
         }
     },
     "extra": {
-        "class": "Slimcms\\Composer\\Plugin\\Installer"
+        "class": "Slimcms\\Composer\\Plugin\\Plugin"
     },
     "require": {
         "composer-plugin-api": "^1.0"
