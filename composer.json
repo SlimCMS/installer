@@ -8,7 +8,7 @@
         }
     },
     "extra": {
-        "class": "phpDocumentor\\Composer\\Installer"
+        "class": "Slimcms\\Composer\\Plugin\\Installer"
     },
     "require": {
         "composer-plugin-api": "^1.0"
