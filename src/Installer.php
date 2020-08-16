@@ -12,7 +12,7 @@ class Installer extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        return 'modules/' . substr($package->getPrettyName(), 23);
+        return 'modules/' . $package->getPrettyName();
     }
 
     /**
