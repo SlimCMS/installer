@@ -21,7 +21,7 @@ class Installer extends LibraryInstaller
     /**
      * @inheritDoc
      */
-    public function getInstallPath(PackageInterface $package)
+    public function getInstallPath(PackageInterface $package): string
     {
         $root = dirname($this->composer->getConfig()->get('vendor-dir'));
         $catalog = $this->supportTypes[$package->getType()];
@@ -33,7 +33,7 @@ class Installer extends LibraryInstaller
     /**
      * @inheritDoc
      */
-    public function supports($packageType)
+    public function supports($packageType): bool
     {
         return array_key_exists($packageType, $this->supportTypes);
     }
